@@ -1,0 +1,84 @@
+/* Default */
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400;1,700&display=swap');
+
+/* Colors */
+/* :root {
+
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #164200;
+ }
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+          scroll-behavior: smooth;
+    }
+  }
+
+/* SVG */
+#smoking-cat {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#Layer_2 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Color pulse of cigarette tip */
+#cigarette-tip {
+    fill: #fad2ac;
+    animation: pulse 6s infinite;
+    -webkit-animation: pulse 6s infinite;
+  }
+  
+  @keyframes pulse {
+    0%   { fill: #fad2ac }
+    17%  { fill: #ff1e00 }
+    33%  { fill: #ff0800 }
+    50%  { fill: #ff0000 }
+  }
+  
+  @-webkit-keyframes pulse {
+    0%   { fill: #fad2ac }
+    17%  { fill: #ff1e00 }
+    33%  { fill: #ff0800 }
+    50%  { fill: #ff0000 }
+  }
+
+/* Cigarette smoke */
+#cigarette-smoke {
+    fill: #e5e5e5;
+    animation: smoke 7s infinite;
+    -webkit-animation: smoke 7s infinite;
+  }
+  
+  @keyframes smoke {
+    0%   { fill: #e5e5e5 }
+    50%  { fill: #ffffff00 }
+  }
+  
+  @-webkit-keyframes smoke {
+    0%   { fill: #e5e5e5 }
+    50%  { fill: #ffffff00 }
+  }
+
+#count {
+    font-size: 4em;
+    font-weight: bold;
+    color: black;
+}
